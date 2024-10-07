@@ -73,8 +73,8 @@ export default function Page() {
               <span className="">{error}</span>
             </div>
             <DrawerFooter>
-              <div className="w-full mx-auto max-w-screen-lg flex justify-end">
-                <div className="flex items-center text-md rounded-md bg-[#003E39] text-white">
+              <div className="w-full mx-auto max-w-screen-lg flex justify-center xl:justify-end">
+                <div className="flex items-center text-md rounded-md bg-[#003E39] text-white w-72 md:w-[420px] xl:w-auto">
                   <SearchFlights />
                 </div>
               </div>
