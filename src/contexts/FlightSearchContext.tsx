@@ -5,7 +5,6 @@
 import React, { createContext, useState, ReactNode } from "react";
 import { Airport, FlightSearchContextType } from "../types/index";
 
-
 export const FlightSearchContext = createContext<
   FlightSearchContextType | undefined
 >(undefined);
@@ -26,7 +25,7 @@ export const FlightSearchProvider = ({ children }: { children: ReactNode }) => {
 
   const [error, setError] = useState<string | null>(null);
 
-  const [loading, setLoading] = useState<boolean>(false); 
+  const [loading, setLoading] = useState<boolean>(true);
 
   const swapAirports = () => {
     setDepartureAirport((prevDeparture) => {
